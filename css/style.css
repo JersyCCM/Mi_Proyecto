@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2? family = Lato: wght @ 100 & display = swap");
+@import url("https://fonts.googleapis.com/css2? family = Dancing + Script: wght @ 500 & display = swap");
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #FFAE4B; }
+
+h1 {
+  color: gold;
+  background-color: black;
+  font-family: "Dancing Script", cursiva;
+  font-size: 50px;
+  text-align: center;
+  font-style: italic; }
+
+.estiloH2 {
+  color: maroon;
+  line-height: 100px;
+  margin-bottom: 50px;
+  margin-top: 200px; }
+
+h2 {
+  color: maroon;
+  margin-top: 30px;
+  text-align: center; }
+
+h3 {
+  color: darkred;
+  text-align: center;
+  margin-top: 20px; }
+
+header {
+  background-color: black;
+  aling-items: center; }
+
+.estiloLogo {
+  background-color: black;
+  text-align: left;
+  padding: 10px 10px; }
+
+.nav {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  .nav .nav__lista {
+    display: inline-block;
+    position: relative;
+    font-size: 17px;
+    padding: 10px 20px; }
+
+a {
+  text-decoration: none;
+  color: #f4af1a;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-align: right; }
+
+.seccionQuienesSomos .seccionQuienesSomos__contenido {
+  margin-top: 100px; }
+  .seccionQuienesSomos .seccionQuienesSomos__contenido .seccionQuienesSomos__contenido__parrafo {
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    text-align: justify;
+    padding: 5px;
+    border: solid 2px black;
+    font-size: 15px; }
+
+.seccionQuienesSomos__imagen {
+  margin-top: 30px; }
+
+form {
+  text-align: center;
+  font-size: 15px;
+  border-top: double 10px brown;
+  border-right: double 10px brown;
+  border-bottom: double 10px brown;
+  border-left: double 10px brown; }
+
+.Preguntas {
+  text-align: center;
+  font-size: 15px;
+  border-top: solid 10px brown;
+  border-right: solid 10px brown;
+  border-bottom: solid 10px brown;
+  border-left: solid 10px brown;
+  font-weight: bold; }
+
+.estiloPromo {
+  color: firebrick;
+  background-color: darkorange;
+  font-weight: bold;
+  width: 50%;
+  text-align: center;
+  align-items: center; }
+
+footer {
+  color: #f4af1a;
+  background-color: black;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 20px;
+  align-items: center; }
+
+.seccionTitulo {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .seccionTitulo .seccionTitulo__estilo {
+    font-family: 'Sansita Swashed', cursiva;
+    color: gold;
+    font-size: 50px;
+    text-align: center;
+    background-color: black;
+    font-style: italic; }
+
+img {
+  border-radius: 15px 15px 15px 15px; }

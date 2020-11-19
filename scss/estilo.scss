@@ -1,0 +1,127 @@
+@import "colores";
+@import "fonts";
+@import "medidas";
+
+body{font-family:$fontLato;
+background-color:$background;}
+
+h1{color:$titulo;
+background-color:$backgroundColor;
+font-family:$fontDancing;
+font-size: $medida1;
+text-align: center;
+font-style: italic;}
+
+.estiloH2{color:$H2;
+    line-height: $lineHeight;
+    margin-bottom: $medida1;
+    margin-top: $margin*20;}
+
+h2{color:$H2;
+   margin-top: $margin*3;
+   text-align: center;}
+
+h3{color:$H3;
+text-align: center;
+margin-top: $margin*2;
+}
+
+header{background-color:$backgroundColor;
+aling-items: center;}
+
+.estiloLogo{ background-color: black;
+    text-align: left;
+    padding: 10px 10px;}
+
+.nav{position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .nav__lista{
+    display: inline-block;
+    position: relative;
+    font-size: 17px;
+    padding: 10px 20px;}
+
+    }
+
+
+    a{ text-decoration: none;
+    color: #f4af1a;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: right;}
+
+.seccionQuienesSomos{
+
+    .seccionQuienesSomos__contenido{
+        margin-top: $margin*10;
+
+        .seccionQuienesSomos__contenido__parrafo{color: black;
+            background-color: white;
+            font-weight: bold;
+            text-align: justify;
+            padding: 5px;
+            border: solid 2px black;
+            font-size: 15px;
+        }
+    }
+   
+}
+
+
+.seccionQuienesSomos__imagen{margin-top:30px;}
+
+
+form{text-align: center;
+    font-size: 15px;
+    border-top: double 10px brown;
+    border-right: double 10px brown;
+    border-bottom: double 10px brown;
+    border-left: double 10px brown;}
+
+.Preguntas{
+    text-align: center;
+    font-size: 15px;
+    border-top: solid 10px brown;
+    border-right: solid 10px brown;
+    border-bottom: solid 10px brown;
+    border-left: solid 10px brown;
+    font-weight: bold;}
+
+ .estiloPromo {
+    color: firebrick;
+    background-color: darkorange;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+}
+
+footer{color: #f4af1a;
+    background-color:$backgroundColor;
+    font-weight: bold;
+    text-align: center;
+    line-height: ($lineHeight/2)-20;
+    margin-top: $margin*2;
+    align-items: center;}
+
+
+.seccionTitulo {
+    margin-top: $margin;
+    margin-bottom: $margin;
+
+    .seccionTitulo__estilo{
+    font-family: 'Sansita Swashed', cursiva;
+    color: gold;
+    font-size: 50px;
+    text-align: center;
+    background-color: black;
+    font-style: italic;
+}}
+
+img {border-radius: 15px 15px 15px 15px;}
+
