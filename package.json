@@ -8,12 +8,12 @@
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
 
   },
-  "author": "",
+  "author": "JersyCamperos",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^5.0.0",
     "nodemon": "^2.0.6"
   },
   "dependencies": {},
-  "description": ""
+  "description": "Pagina web para emprendimiento de comida por delivery. Ofrece comida italiana, oriental y vegetariana"
 }
