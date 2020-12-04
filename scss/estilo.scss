@@ -126,11 +126,11 @@ footer{color: #f4af1a;
 
 img {border-radius: 15px 15px 15px 15px;}
 
-.margen{
-    
-    margin-bottom:10px;
-    margin-left:70px;
-    } 
+.margen{ margin-bottom:20px;}
+
+.rotate:hover {
+    transform: rotateZ(10deg);}
+
 
 .descripcion{
     color:black;
@@ -142,7 +142,7 @@ img {border-radius: 15px 15px 15px 15px;}
             }
 
 
-.margenImg{align-items: center;}
+
 
 
 
