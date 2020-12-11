@@ -19,7 +19,13 @@ h1 {
     color: $H2;
     line-height: $lineHeight;
     margin-bottom: $medida1;
-    margin-top: $margin*20;
+    margin-top: $margin*10;
+    font-weight: bold;
+}
+
+.estiloH3{
+    margin-bottom: 20px;
+    margin-top: $margin*2;
 }
 
 h2 {
@@ -173,12 +179,6 @@ img {
     line-height: 20px
 }
 
-.textPromo {
-    text-align: center;
-    font-size: 25px; 
-    color: black; 
-    padding-top:50px; 
-    padding-bottom:50px;}
 
 .imagenPromo{  height: 100%;
             background-position: center;
@@ -186,3 +186,18 @@ img {
             background-size: cover;  
             position: relative; 
             width:100%;}
+
+
+.visor_imagenes {
+  text-align: center;
+  font-size: 25px; 
+  color: black; 
+  padding-top:50px; 
+  padding-bottom:50px;
+  line-height: 40px;
+}
+
+.color {
+  color: #8B4513;
+  background-color: #FFDAB9;
+}
