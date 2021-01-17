@@ -8,6 +8,9 @@
     <meta name="keywords" content="comida, delivery, lasagna, shawarma, ensalada, emprendimienrto">
 
     <title>Inicio_Mamma Mía!</title>
+    <script src="datos.js"></script>
+    <script src="builder.js"></script>
+    <script src="ap.js"></script>
     <link href="https://fonts.googleapis.com/css2? family = Lato: ital, wght @ 0,400; 0,700; 1,900 & display = swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2? family = Sansita + Swashed: wght @ 300; 500; 900 & display = swap" rel="stylesheet">
 
@@ -56,7 +59,20 @@
         <h1 class="seccionTitulo__estilo">Nuestros Platos</h1>
     </section>
 
+    <table>
+        <tr>
+          <td><div id="productContainer"></div></td>
+          <td>
+            <div id="selectedContainer"></div>
+            <p id="totalProducts">0</p>
+          </td>
+        </tr>
+      </table>
+      
+      <hr>
 
+
+      
     <main>
         <div class="container">
             <div class="row d-flex justify-content-center tex-center">
