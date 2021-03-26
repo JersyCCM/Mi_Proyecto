@@ -4,12 +4,21 @@ const domBuilder = new DOMBuilder();
 let carritoCompras = extraerDataLocalStorage("CarritoCompras");
 
 
+
 function guardarDataLocalStorage(nombreParametro, valor) {
     localStorage.setItem(nombreParametro, JSON.stringify(valor));
 }
 
 function extraerDataLocalStorage(nombreParametro) {
-    return JSON.parse(localStorage.getItem(nombreParametro));
+    let listaObtenida = localStorage.getItem(nombreParametro);
+    if (listaObtenida == null){
+        return [];
+    }
+    else{
+        return JSON.parse(listaObtenida);
+    }
+
+    
 }
 
 function buildProductCard(product) {
@@ -39,10 +48,14 @@ function onSelectClick(event) {
             return product;
         }
     });
+
+
     carritoCompras.push(selectedProduct);
+    console.log(carritoCompras);
     guardarDataLocalStorage("CarritoCompras", carritoCompras);
     alert("Se ha agregado este producto a tu carrito de compras. Ver carrito de compras");
 }
+
 
 function lee_json() {
     const objetoJson = {
@@ -126,18 +139,21 @@ function init() {
 
     if (typeof(Storage) !== "undefined") {
         guardarDataLocalStorage("Todos", productos);
-        guardarDataLocalStorage("ComidaItaliana", productosItalianos);
-        guardarDataLocalStorage("ComidaArabe", productosArabes);
+        guardarDataLocalStorage("ComidaItaliana", productos.productosItalianos);
+        guardarDataLocalStorage("ComidaArabe", productos.productosArabes);
     }
 }
 
 
 window.addEventListener('load', function() {
     init();
-
     const btnProducts = document.querySelectorAll('.btnProduct');
     btnProducts.forEach(function(btnProduct) {
         btnProduct.addEventListener('click', onSelectClick);
     })
 
 })
+
+/*document.getElementById("cantidadProductos").appendChild(carritoCompras.lenght);*/
+
+
