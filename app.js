@@ -3,6 +3,11 @@
 const domBuilder = new DOMBuilder();
 let carritoCompras = extraerDataLocalStorage("CarritoCompras");
 
+if (carritoCompras == null){
+    carritoCompras = [];
+}
+
+
 
 
 function guardarDataLocalStorage(nombreParametro, valor) {
@@ -43,13 +48,26 @@ function buildProductCard(product) {
 function onSelectClick(event) {
     const idProduct = event.target.dataset.id;
     const allProducts = extraerDataLocalStorage("ComidaItaliana").concat(extraerDataLocalStorage("ComidaArabe"));
+
+
     const selectedProduct = allProducts.find(function(product) {
         if (product.id === idProduct) {
             return product;
         }
     });
 
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 51e8d039d4d109d33dc703e1970658bcd72b3687
+>>>>>>> d410506cff1ccb976fe5bd94b43c38ad56c3b631
+>>>>>>> 580b86846eae6ce796245a92cbbb84b82c74fa04
     carritoCompras.push(selectedProduct);
     console.log(carritoCompras);
     guardarDataLocalStorage("CarritoCompras", carritoCompras);
@@ -141,6 +159,16 @@ function init() {
         guardarDataLocalStorage("Todos", productos);
         guardarDataLocalStorage("ComidaItaliana", productos.productosItalianos);
         guardarDataLocalStorage("ComidaArabe", productos.productosArabes);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 51e8d039d4d109d33dc703e1970658bcd72b3687
+>>>>>>> d410506cff1ccb976fe5bd94b43c38ad56c3b631
+>>>>>>> 580b86846eae6ce796245a92cbbb84b82c74fa04
     }
 }
 
