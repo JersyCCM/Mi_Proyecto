@@ -1,0 +1,25 @@
+{
+  "name": "clase-14",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss --watch scss/estilo.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JersyCCM/Mi_Proyecto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.6"
+  },
+  "bugs": {
+    "url": "https://github.com/JersyCCM/Mi_Proyecto/issues"
+  },
+  "homepage": "https://github.com/JersyCCM/Mi_Proyecto#readme",
+  "description": "Pagina web para emprendimiento de comida por delivery. Ofrece comida italiana, oriental y vegetariana"
+}
