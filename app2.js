@@ -72,13 +72,21 @@ function initCarrito (){
 }
 
 
-
-
-
-/*function calculoTotalCarrito() {
+function calculoTotalCarrito() {
     console.log(hola);
     let carrito = new carroDeCompras(carritoCompras);
     console.log(carrito.calculoTotalCarrito());
 }
 
-*/
+
+
+function guardarDataLocalStorage(nombreParametro, valor) {
+    localStorage.setItem(nombreParametro, JSON.stringify(valor));
+}
+
+
+function limpiarCarrito(){
+    guardarDataLocalStorage("CarritoCompras", [] );
+    alert("Su compra se realizó satisfactoriamente");
+}
+
